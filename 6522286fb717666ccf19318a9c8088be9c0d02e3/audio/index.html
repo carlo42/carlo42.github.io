@@ -30,7 +30,6 @@
 
     document.getElementById('audio-control').onclick = function () {
 
-        //AWS.config.credentials = new AWS.Credentials(accessID, secretKey, null);
         AWS.config.credentials = new AWS.CognitoIdentityCredentials({
 		// Provide your Pool Id here
 			IdentityPoolId: 'us-east-1:597e0192-2273-4aa0-af5b-acc7ed702b02',
