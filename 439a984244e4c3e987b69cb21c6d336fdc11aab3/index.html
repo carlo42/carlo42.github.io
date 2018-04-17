@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>Sample Chatbot</title>
+	<title>TC help chatbot</title>
 	<script src="https://sdk.amazonaws.com/js/aws-sdk-2.41.0.min.js"></script>
 	<style language="text/css">
 		input#userIn {
@@ -53,9 +53,9 @@
 
 <body>
 	<a href='../index.html'>Back</a> </br></br>
-	<h1 style="text-align: center">Lex Chatbot Example</h1>
+	<h1 style="text-align: center">Think Central Help</h1>
 	<p style="text-align: center">
-		Example using JS integration
+		Chatbot POC
 	</p>
 	<div id="conversation" style="margin: 0 auto; width: 400px; height: 400px; border: 1px solid #ccc; background-color: #eee; padding: 4px; overflow: scroll"></div>
 	<div id="chatform" style="margin: 0 auto; width: 400px;">
@@ -92,7 +92,7 @@
 				// send it to the Lex runtime
 				var params = {
 					botAlias: '$LATEST',
-					botName: 'hmhExampleCB',
+					botName: 'hmhProductHelp',
 					inputText: userIn,
 					userId: lexUserId,
 					sessionAttributes: sessionAttributes
