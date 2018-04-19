@@ -25,7 +25,7 @@
 <script src="https://sdk.amazonaws.com/js/aws-sdk-2.48.0.min.js"></script>
 <script src="dist/aws-lex-audio.js" type="text/javascript"></script>
 <script type="text/javascript">
-	const botName = 'hmhExampleCB';
+	const botName = 'hmhProduct';
     const message = document.getElementById('message');
     const nigBitHelp = document.getElementById('nigBitHelp');
     const wagBotHelp = document.getElementById('wagBotHelp');
@@ -42,7 +42,7 @@
 
         AWS.config.credentials = new AWS.CognitoIdentityCredentials({
 		// Provide your Pool Id here
-			IdentityPoolId: 'us-east-1:597e0192-2273-4aa0-af5b-acc7ed702b02',
+			IdentityPoolId: 'us-east-1:353d537a-3479-4f1a-b47a-e716d225838f',
 		});
         AWS.config.region = 'us-east-1';
         
