@@ -144,7 +144,8 @@
 			var responsePara = document.createElement("P");
 			responsePara.className = 'lexResponse';
 			if (lexResponse.message) {
-				responsePara.appendChild(document.createTextNode(lexResponse.message));
+				//responsePara.appendChild(document.createTextNode(lexResponse.message));
+				responsePara.innerHTML = lexResponse.message;
 				responsePara.appendChild(document.createElement('br'));
 			}
 			if (lexResponse.dialogState === 'ReadyForFulfillment') {
